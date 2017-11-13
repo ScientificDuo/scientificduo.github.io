@@ -1,8 +1,16 @@
+#wrapper {
+	position:relative;
+	display:inline-block;
+    width:1280px;
+}
+
+
+
 #agungwebi
 {
 	display	 : inline-block;
     width    : 1280px;
-    height   : 300px;
+    height   : 160px;
     overflow : hidden;
     position : relative;
 	margin	 : -5px;
@@ -17,8 +25,20 @@
 	
 }
 
-#wrapper {
-	position:relative;
-	display:inline-block;
-    width:1280px;
+#agung_sat_ash
+{
+	display	 : inline-block;
+	max-width: 300px;
+	overflow : hidden;
+    position : relative;
+	margin	 : -5px;
+	
+}
+
+#agung_ash_prob
+{
+	margin-left: -386px; 
+	height: 800px; 
+	margin-top: -686px; 
+	width: 600px
 }
