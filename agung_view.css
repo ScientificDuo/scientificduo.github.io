@@ -52,8 +52,17 @@
 	margin	 : -5px;
 }
 
-
-#lower_3rd_img.resize {
-  width:200px;
-  height:40px;
+h1
+{
+	position:absolute;
+	top:-20px;
+	left:10px;
+	font-family: Tahoma,Verdana,Segoe,sans-serif;
+	font-size: 42px;
+	color: white;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 700;
+	line-height: 26.4px;
 }
+
