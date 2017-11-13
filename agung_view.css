@@ -42,3 +42,19 @@
 	margin-top: -686px; 
 	width: 600px
 }
+
+#lower_3rd
+{
+	display	 : inline-block;
+    width    : 1080px;
+    height   : 100px;
+    position : relative;
+	margin	 : -5px;
+}
+}
+
+#lower_3rd_img
+{
+	height:100px;
+	width: 300px;
+}
