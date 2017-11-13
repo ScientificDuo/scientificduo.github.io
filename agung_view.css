@@ -14,3 +14,9 @@
     width    : 1280px;
     height   : 1200px;
 }
+
+#wrapper {
+	position:relative;
+	display:inline-block;
+    width:960px;
+}

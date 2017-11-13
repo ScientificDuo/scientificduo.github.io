@@ -1,10 +1,24 @@
-<!DOCTYPE html>
 <html>
+<head>
+<link rel="stylesheet" type="text/css" href="agung_view.css">
+</head>
   <body>
+  <div id="wrapper">
+    <script type="text/javascript">
+		function agung_tmks_reresh() {
+			if (!document.images) return;
+			document.getElementById('agung_tmks_webi').src = 'https://magma.vsi.esdm.go.id/img/wf/TMKS.png?' + Math.random();
+			setTimeout('agung_tmks_reresh()',18000);   /*time in milliseconds... same as in 'onload'*/
+		}
+	</script>
     <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
-    <div id="player_bukit_asah"></div>
-
+	<div id="player_desa_rendang" style="margin:-5px;"></div>
+    <div id="player_bukit_asah" style="margin:-5px;align:top;"></div>
+	<div id="webi">
+		<img id="agung_tmks_webi" src="https://magma.vsi.esdm.go.id/img/wf/TMKS.png" style="position:absolute;top:0;left:0;z-index:-1" onload="setTimeout('agung_tmks_reresh()',18000)" >
+	</div>
     <script>
+	
       // 2. This code loads the IFrame Player API code asynchronously.
       var tag = document.createElement('script');
 
@@ -14,12 +28,21 @@
 
       // 3. This function creates an <iframe> (and YouTube player)
       //    after the API code downloads.
-      var player;
+      var player_bukit;
+	  var player_desa;
       function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player_bukit_asah', {
+        player_bukit = new YT.Player('player_bukit_asah', {
           height: '390',
           width: '640',
           videoId: 'IuLYXxOFNSo',
+          events: {
+            'onReady': onPlayerReady
+          }
+        });
+		player_desa = new YT.Player('player_desa_rendang', {
+          height: '390',
+          width: '640',
+          videoId: 'P4_thf1dZ7M',
           events: {
             'onReady': onPlayerReady
           }
@@ -31,19 +54,10 @@
         event.target.playVideo();
       }
 
-      // 5. The API calls this function when the player's state changes.
-      //    The function indicates that when playing a video (state=1),
-      //    the player should play for six seconds and then stop.
-      //var done = false;
-      //function onPlayerStateChange(event) {
-      //  if (event.data == YT.PlayerState.PLAYING && !done) {
-      //    setTimeout(stopVideo, 6000);
-      //   done = true;
-      //  }
-      //}
-      //function stopVideo() {
+      function stopVideo() {
         player.stopVideo();
-      //}
+      }
     </script>
+  </div>
   </body>
 </html>
