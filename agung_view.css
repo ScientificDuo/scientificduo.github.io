@@ -51,10 +51,9 @@
     position : relative;
 	margin	 : -5px;
 }
-}
 
-#lower_3rd_img
-{
-	height:100px;
-	width: 300px;
+
+#lower_3rd_img.resize {
+  width:200px;
+  height:40px;
 }
