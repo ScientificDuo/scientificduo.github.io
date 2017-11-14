@@ -38,9 +38,9 @@
 
 #agung_ash_prob
 {
-	margin-left: -386px; 
+	margin-left: -330px; 
 	height: 800px; 
-	margin-top: -686px; 
+	margin-top: -660px; 
 	width: 600px
 }
 
@@ -50,6 +50,23 @@
     width    : 1080px;
     height   : 100px;
     position : relative;
+	margin	 : -5px;
+}
+
+#ash_prob_img
+{
+	position: absolute;
+	top:643px;
+	left: 5px;
+}
+
+h3
+{
+	font-family: Tahoma,Verdana,Segoe,sans-serif;
+    position : absolute;
+	top: 540px;
+	color: white;
+	left: 20px;
 	margin	 : -5px;
 }
 
