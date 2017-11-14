@@ -53,6 +53,16 @@
 	margin	 : -5px;
 }
 
+#sub_alert_frame
+{
+	position: absolute;
+	width: 1000px;
+	height: 78px;
+	top:648px;
+	left: 270px;
+
+}
+
 h1
 {
 	position:absolute;
