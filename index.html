@@ -16,14 +16,12 @@
   <div id="wrapper">
     <script type="text/javascript">
 		function agung_tmks_reresh() {
-			if (!document.images) return;
-			document.getElementById('agung_tmks_webi').src = 'https://magma.vsi.esdm.go.id/img/wf/TMKS.png?' + Math.random();
 			setTimeout('agung_tmks_reresh()',18000);   /*time in milliseconds... same as in 'onload'*/
+			document.getElementById('agung_tmks_webi').src = 'https://magma.vsi.esdm.go.id/img/wf/TMKS.png?' + Math.random();
 		}
 		function ge_jagi_bhz_refresh() {
-			if (!document.images) return;
-			document.getElementById('ge_jagi_bhz_img').src = 'https://www.dropbox.com/s/gwo3b1tcjs5azki/GE_JAGI_BHZ.png?raw=1&' + Math.random();
 			setTimeout('ge_jagi_bhz_refresh()',2000);   /*time in milliseconds... same as in 'onload'*/
+			document.getElementById('ge_jagi_bhz_img').src = 'https://www.dropbox.com/s/gwo3b1tcjs5azki/GE_JAGI_BHZ.png?raw=1&' + Math.random();
 		}
 		function agung_sat_ash_reresh() {
 			window.frames["agung_ash_prob"].src="https://volcano.ssec.wisc.edu/imagery/view/#sector:Lesser_Sunda_Islands_West_750_m::instr:all::sat:all::image_type:Ash_Probability::endtime:latest::daterange:60"
