@@ -17,7 +17,7 @@
     <script type="text/javascript">
 		function agung_tmks_reresh() {
 			setTimeout('agung_tmks_reresh()',18000);   /*time in milliseconds... same as in 'onload'*/
-			document.getElementById('agung_tmks_webi').src = 'https://magma.vsi.esdm.go.id/img/wf/TMKS.png?' + Math.random();
+			document.getElementById('agung_tmks_webi').src = 'http://magma.vsi.esdm.go.id/img/wf/TMKS.png?' + Math.random();
 		}
 		function ge_jagi_bhz_refresh() {
 			setTimeout('ge_jagi_bhz_refresh()',2000);   /*time in milliseconds... same as in 'onload'*/
@@ -32,7 +32,7 @@
 	<div id="player_desa_rendang" style="margin:-5px;"></div>
     <div id="player_bukit_asah" style="margin:-5px;align:top;"></div>
 	<div id="agungwebi">
-		<img id="agung_tmks_webi" src="https://magma.vsi.esdm.go.id/img/wf/TMKS.png" onload="setTimeout('agung_tmks_reresh()',18000)" >
+		<img id="agung_tmks_webi" src="http://magma.vsi.esdm.go.id/img/wf/TMKS.png" onload="setTimeout('agung_tmks_reresh()',18000)" >
 	</div>
 	<div id="agung_sat_ash">
 		<iframe id="agung_ash_prob" frameborder="0" scrolling="no" onload="setTimeout('agung_sat_ash_reresh()', 18000)" src="https://volcano.ssec.wisc.edu/imagery/view/#sector:Lesser_Sunda_Islands_West_750_m::instr:all::sat:all::image_type:Ash_Probability::endtime:latest::daterange:60">
