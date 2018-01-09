@@ -1,9 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html><head>
-<script><endnote><head>
-<script><endnote><head>
-<script><endnote><head>
-<script><endnote><head>
+<script>
 <meta content="text/html; charset=ISO-8859-1"
 http-equiv="content-type">
 <title>Agung</title>
@@ -24,6 +20,7 @@ document.getElementById('agung_static_img').src = 'http://storage.vsi.esdm.go.id
 function agung_tmks_reresh() {
 setTimeout('agung_tmks_reresh()',18000); /*time in milliseconds... same as in 'onload'*/
 document.getElementById('agung_tmks_webi').src = 'http://magma.vsi.esdm.go.id/img/wf/TMKS.png?' + Math.random();
+gotoBottom('tmks_webi');
 }
 function ge_jagi_bhz_refresh() {
 setTimeout('ge_jagi_bhz_refresh()',2000); /*time in milliseconds... same as in 'onload'*/
@@ -32,6 +29,10 @@ document.getElementById('ge_jagi_bhz_img').src = 'https://www.dropbox.com/s/gwo3
 function agung_sat_ash_reresh() {
 window.frames["agung_ash_prob"].src="https://volcano.ssec.wisc.edu/imagery/view/#sector:Lesser_Sunda_Islands_West_750_m::instr:all::sat:all::image_type:Ash_Probability::endtime:latest::daterange:60"
 setTimeout('agung_sat_ash_reresh()',18000); /*time in milliseconds... same as in 'onload'*/
+}
+function gotoBottom(id) {
+  var ele = document.getElementById(id);
+  ele.scrollTop = ele.scrollHeight;
 }
 </script>
 <span style="font-family: monospace;"></span>
@@ -62,7 +63,7 @@ setTimeout('agung_sat_ash_reresh()',18000); /*time in milliseconds... same as in
 <tbody border="0" cellpadding="0" cellspacing="0">
 <tr border="0" cellpadding="0" cellspacing="0">
 <td border="0" cellpadding="0" cellspacing="0">
-<div style="max-width: 1280px; max-height: 100px; overflow-x:hidden;"><img id="agung_tmks_webi" src="http://magma.vsi.esdm.go.id/img/wf/TMKS.png" onload="setTimeout('agung_tmks_reresh()',18000)"></div>
+<div id="tmks_webi" style="max-width: 1280px; max-height: 100px; overflow-x:hidden;"><img id="agung_tmks_webi" src="http://magma.vsi.esdm.go.id/img/wf/TMKS.png" onload="gotoBottom('tmks_webi'); setTimeout('agung_tmks_reresh()',18000)"></div>
 </td>
 </tr>
 </tbody>
